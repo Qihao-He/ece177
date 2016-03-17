@@ -17,6 +17,8 @@ int polynomial(){
 	y=x*x*x+5*x*x+10*x+15;
 	printf("The product of the polynomial is:%lf\n",y);
 }
+int solution(){
+}
 
 int main(){
 int question;
@@ -30,7 +32,10 @@ int question;
 	case 2:
 		polynomial();
 		break;
+	case 3:
+		solution();
+		break;
 	}
-	return 0;
+return 0;
 }
 
