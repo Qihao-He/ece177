@@ -44,24 +44,28 @@ int freefalldistance(){
 }
 int main(){
 int question;
-	printf("This is ece177 lab2 solving 4 questions.\nPlease enter\n1 for temperature,\n2 for polynomial,\n3 for solution,\n4 for freefalldistance.\n");
+	printf("This is ece177 lab2 solving 4 questions.\nPlease enter\n1 for temperature,\n2 for polynomial,\n3 for solution,\n4 for freefalldistance.\n0 for exit.\n");
 	scanf("%d",&question);
-	switch (question){
-	case 1:
-		temperature();
-		break;
-	case 2:
-		polynomial();
-		break;
-	case 3:
-		solution();
-		break;
-	case 4:
-		freefalldistance();
-		break;
-	default:
-		printf("Sorry, your choice did not match any of the four. Please try again.\n");
-		break;
+	while(question!=0){
+		switch (question){
+			case 1:
+			temperature();
+			break;
+			case 2:
+			polynomial();
+			break;
+			case 3:
+			solution();
+			break;
+			case 4:
+			freefalldistance();
+			break;
+			default:
+			printf("Sorry, your choice did not match any of the four. Please try again.\n");
+			break;
+		}
+	printf("This is ece177 lab2 solving 4 questions.\nPlease enter\n1 for temperature,\n2 for polynomial,\n3 for solution,\n4 for freefalldistance.\n0 for exit.\n");
+	scanf("%d",&question);
 	}
 return 0;
 }
