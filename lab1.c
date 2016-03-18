@@ -39,7 +39,7 @@ int freefalldistance(){
 	}
 	for(j=0;j<20;j++){
 		s[j]=s0+v0*t[j]+(1/2)*a*t[j]*t[j];
-		printf("The distance of freefall at time %d is:%d\n",t[j],s[j]);
+		printf("Time:%d Freefalldistance:%d\n",t[j],s[j]);
 	}	
 }
 int main(){
