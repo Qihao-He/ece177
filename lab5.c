@@ -1,5 +1,6 @@
 /*This is ece177 lab5.*/
 #include<stdio.h>
+===================
 int main() {
 	int h, m, s, i, j, k;
 	h = 0;
