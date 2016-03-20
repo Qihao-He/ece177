@@ -31,6 +31,26 @@ void b(){
 	printf("This is b level.\n");
 	printf("please input the hour: the minute: the second: \n");
 	scanf("%d%d%d",&h,&m,&s);
+	for(i=0;i<=2;i++){
+		if(i==0){
+		j=h;	
+		}
+		if(i==1){
+		j=m;
+		}
+		if(i==2){
+		j=s;
+		}
+		if(j<=0||j>=60){
+		printf("ERROR:%d\n",j);
+		}
+		else{
+			for(k=0;k<j;k++){
+				printf("*");
+			}
+		printf("\n");
+		}
+	} 
 
 }
 void a(){
