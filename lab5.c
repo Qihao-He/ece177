@@ -15,16 +15,22 @@ void c(){
 		if(i==2){
 		j=s;
 		}
-		for(k=0;k<j;k++){
-			printf("*");
+		if(j<=0||j>=60){
+		printf("ERROR:%d\n",j);
 		}
+		else{
+			for(k=0;k<j;k++){
+				printf("*");
+			}
 		printf("\n");
+		}
 	} 
 } 
 void b(){
+	int i,j,k,h,m,s;
 	printf("This is b level.\n");
 	printf("please input the hour: the minute: the second: \n");
-//	scanf("%d%d%d",&h,&m,&s);
+	scanf("%d%d%d",&h,&m,&s);
 
 }
 void a(){
