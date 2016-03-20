@@ -1,5 +1,6 @@
 /*This is ece177 lab5.*/
 #include<stdio.h>
+<<<<<<< HEAD
 void c(){
 	int i,j,k,h,m,s;
 	printf("This is c level.\n");
@@ -45,10 +46,19 @@ int main() {
 	b();
 	a();
 /*
+=======
+===================
+int main() {
+>>>>>>> master
 	int h, m, s, i, j, k;
 	h = 0;
 	m = 0;
 	s = 0;
+<<<<<<< HEAD
+=======
+	printf("please input the hour: the minute: the second: \n");
+	scanf_s("%d%d%d",&h,&m,&s);
+>>>>>>> master
 	for (j = 0; j <= 2; j++) {
 		if (j = 0) {
 			k = h;
@@ -60,9 +70,17 @@ int main() {
 			k = s;
 		}
 		for{
+<<<<<<< HEAD
 		}
 	}
 	while ((h!= 0 )|| (m!= 0) || (s!= 0)) {
+=======
+
+		}
+	}
+	while ((h!= 0 )|| (m!= 0) || (s!= 0)) {
+		/*hour and with 6 bit shifting 1 bit*/
+>>>>>>> master
 		for (i = 32; i != 0; i>>= 1) {
 			if (i&h) {
 				printf("*");
@@ -73,6 +91,10 @@ int main() {
 		printf("\n");
 	
 	}
+<<<<<<< HEAD
 */
 return 0;
+=======
+	return 0;
+>>>>>>> master
 }
