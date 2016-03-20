@@ -2,23 +2,21 @@
 #include<math.h>
 void one_printalltypesize(){
 	printf("one_print all types size\n");
-	printf("sizeof char = %d\n", sizeof(char));
-	printf("sizeof unsigned char = %d\n", sizeof(unsigned char));
-	printf("sizeof short = %d\n", sizeof(short));
-	printf("sizeof unsigned short = %d\n", sizeof(unsigned short));
-	printf("sizeof short = %d\n", sizeof(short));
-	printf("sizeof int = %d\n", sizeof(int));
-	printf("sizeof unsigned int = %d\n", sizeof(unsigned int));
-	printf("sizeof long = %d\n", sizeof(long));
-	printf("sizeof unsigned long = %d\n", sizeof(unsigned long));
-	printf("sizeof long long = %d\n", sizeof(long long));
-	printf("sizeof unsigned long long = %d\n", sizeof(unsigned long long));
-	printf("sizeof short = %d\n", sizeof(short));
-	printf("sizeof float = %d\n", sizeof(float));
-	printf("sizeof double = %d\n", sizeof(double));
-	printf("sizeof char* = %d\n", sizeof(char*));
-	printf("sizeof long* = %d\n", sizeof(long*));
-}
+	printf("sizeof char = %zu\n", sizeof(char));
+	printf("sizeof unsigned char = %zu\n", sizeof(unsigned char));
+	printf("sizeof short = %zu\n", sizeof(short));
+	printf("sizeof unsigned short = %zu\n", sizeof(unsigned short));
+	printf("sizeof int = %zu\n", sizeof(int));
+	printf("sizeof unsigned int = %zu\n", sizeof(unsigned int));
+	printf("sizeof long = %zu\n", sizeof(long));
+	printf("sizeof unsigned long = %zu\n", sizeof(unsigned long));
+	printf("sizeof long long = %zu\n", sizeof(long long));
+	printf("sizeof unsigned long long = %zu\n", sizeof(unsigned long long));
+	printf("sizeof float = %zu\n", sizeof(float));
+	printf("sizeof double = %zu\n", sizeof(double));
+	printf("sizeof char* = %zu\n", sizeof(char*));
+	printf("sizeof long* = %zu\n", sizeof(long*));
+	}
 void two_a(){
 	printf("\ntwo_a\n");
 	printf("%d\t%u\n", (short)45, (unsigned short)45);
@@ -52,7 +50,7 @@ void two_c() {
 void three(int year) {
 	int month, day, a, b, c, d, e, f, g, h, i, k, l, m, n, p;
 	printf("\nthree_please input the year between'2011-1015':\n");
-	scanf_s("%d",&year);
+	scanf("%d",&year);
 	a = year % 19;
 	b = year / 100;
 	c = year % 100;
@@ -71,16 +69,17 @@ void three(int year) {
 	day = p + 1;
 	printf("Date of Easter in %d is %d/%d\n",year,month,day);
 }
+
 int   main(){
-	/*calling 1_printalltypesize from main
-	calling 2a_*/
 	int year = 0; 
 	one_printalltypesize();
 	two_a();
 	two_b();
 	two_c();
+
 	do{
 		three(year);
 	} while (year != 0);
-	return 0;
+
+return 0;
 }
