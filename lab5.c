@@ -15,7 +15,7 @@ void c() {
 		if (i == 2) {
 			j = s;
 		}
-		if (j <= 0 || j >= 60) {
+		if (j < 0 || j >= 60) {
 			printf("ERROR:%d\n", j);
 		}
 		else {
@@ -41,12 +41,17 @@ void b() {
 		if (i == 2) {
 			j = s;
 		}
-		if (j <= 0 || j >= 60) {
+		if (j < 0 || j >= 60) {
 			printf("ERROR:%d\n", j);
 		}
 		else {
-			for (k = 0; k<j; k++) {
-				printf("*");
+			for (k=32;k!=0;k>>=1) {
+				if(k&j){
+					printf("*");
+				}
+				else{
+					printf("_");
+				}
 			}
 			printf("\n");
 		}
