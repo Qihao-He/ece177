@@ -63,21 +63,30 @@ void a() {
 	printf("This is a level.\n");
 	printf("please input the hour: the minute: the second: \n");
 	scanf("%d%d%d",&h,&m,&s);
-	for (i = 0; i <= 2; i++) {
+	for (i = 0; i <= 5; i++) {
 		if (i == 0) {
-			j = h;
+			j = h/10;
 		}
 		if (i == 1) {
-			j = m;
+			j = h%10;
 		}
 		if (i == 2) {
-			j = s;
+			j = m/10;
+		}
+		if (i == 3) {
+			j = m%10;
+		}
+		if (i == 4) {
+			j = s/10;
+		}
+		if (i == 5) {
+			j = s%10;
 		}
 		if (j < 0 || j >= 60) {
 			printf("ERROR:%d\n", j);
 		}
 		else {
-			for (k=32;k!=0;k>>=1) {
+			for (k=8;k!=0;k>>=1) {
 				if(k&j){
 					printf("*");
 				}
