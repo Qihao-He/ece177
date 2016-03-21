@@ -21,6 +21,9 @@ scanf("%d%d",&size,&i);
 				if(j==0||k==0||j==size-1||k==size-1){
 				printf("*");
 				}
+				else{
+				printf(" ");
+				}
 			}
 		printf("\n");
 		}
