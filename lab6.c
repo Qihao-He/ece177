@@ -35,7 +35,8 @@ void triangle(){
 void zigzag(){
 }
 main(){
-int choice;
+//use a do while loop to solve the problem.
+int choice=0;
 printf("This is lab 6 print shapes.\nPlease enter\n1 for square.\n2 for triangle.\n3 for zigzag.\n0 for exit.\n");
 scanf("%d",&choice);
 	while(choice!=0){
