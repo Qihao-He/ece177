@@ -36,10 +36,10 @@ void zigzag(){
 }
 main(){
 //use a do while loop to solve the problem.
-int choice=0;
-printf("This is lab 6 print shapes.\nPlease enter\n1 for square.\n2 for triangle.\n3 for zigzag.\n0 for exit.\n");
-scanf("%d",&choice);
-	while(choice!=0){
+	while(1){
+	int choice=0;
+	printf("This is lab 6 print shapes.\nPlease enter\n1 for square.\n2 for triangle.\n3 for zigzag.\n0 for exit.\n");
+	scanf("%d",&choice);
 		switch(choice){
 		case 1:
 		square();
@@ -53,8 +53,9 @@ scanf("%d",&choice);
 		default:
 		printf("Your choice did not match any of the three, please enter again.\n");
 		}
-	printf("Please enter\n1 for square.\n2 for triangle.\n3 for zigzag.\n0 for exit.\n");
-	scanf("%d",&choice);
+		if(choice==0){
+		break;
+		}	
 	}
 return 0;
 }
