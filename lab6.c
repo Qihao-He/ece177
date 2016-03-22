@@ -46,8 +46,8 @@ scanf("%d%d",&size,&i);
 //This is no fill.
 	if(i==0){
 		for(k=0;k<size;k++){
-			for(j=0;j<size;j++){
-				if(j==0||k==0||j==size-1||k==size-1){
+			for(j=0;j<k+1;j++){
+				if(j==0||k==j||k==size-1){
 				printf("*");
 				}
 				else{
