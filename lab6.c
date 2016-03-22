@@ -31,6 +31,33 @@ scanf("%d%d",&size,&i);
 }
 //triangle function is to print out a triangle.
 void triangle(){
+int size,i,j,k;
+printf("You have chosen triangle.\nPlease enter the size.\nPlease enter 0 for no fill, 1 for fill.\n");
+scanf("%d%d",&size,&i);
+//This is fill.
+	if(i==1){
+		for(k=0;k<size;k++){
+			for(j=0;j<k+1;j++){
+			printf("*");
+			}
+		printf("\n");
+		}
+	}
+//This is no fill.
+	if(i==0){
+		for(k=0;k<size;k++){
+			for(j=0;j<size;j++){
+				if(j==0||k==0||j==size-1||k==size-1){
+				printf("*");
+				}
+				else{
+				printf(" ");
+				}
+			}
+		printf("\n");
+		}
+	}
+
 }
 void zigzag(){
 }
@@ -38,7 +65,7 @@ main(){
 //use a do while loop to solve the problem.
 	while(1){
 	int choice=0;
-	printf("This is lab 6 print shapes.\nPlease enter\n1 for square.\n2 for triangle.\n3 for zigzag.\n0 for exit.\n");
+	printf("This is lab 6 print shapes.\nPlease enter\n1 square.\n2 triangle.\n3 zigzag.\n0 exit.\n");
 	scanf("%d",&choice);
 		switch(choice){
 		case 1:
