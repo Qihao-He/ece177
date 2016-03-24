@@ -101,6 +101,7 @@ main(){
 				printf("Your choice did not match any of the three, please enter again.\n");
 		}
 		if(choice==0){
+			printf("You have chosen to exit.\n");
 			break;
 		}	
 	}
